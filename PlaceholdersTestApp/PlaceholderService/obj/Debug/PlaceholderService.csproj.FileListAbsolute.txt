@@ -1,0 +1,6 @@
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\bin\Debug\PlaceholderService.dll
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\bin\Debug\PlaceholderService.pdb
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.csprojResolveAssemblyReference.cache
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.dll
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.pdb

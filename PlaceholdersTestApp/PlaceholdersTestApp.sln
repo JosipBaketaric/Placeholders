@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholdersTestApp", "PlaceholdersTestApp\PlaceholdersTestApp.csproj", "{3DC167BB-5BD1-42D4-9516-4F142D854AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceholderService", "PlaceholderService\PlaceholderService.csproj", "{65CCB042-B473-4198-AA1E-821ADA11E903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC167BB-5BD1-42D4-9516-4F142D854AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC167BB-5BD1-42D4-9516-4F142D854AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC167BB-5BD1-42D4-9516-4F142D854AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC167BB-5BD1-42D4-9516-4F142D854AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65CCB042-B473-4198-AA1E-821ADA11E903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65CCB042-B473-4198-AA1E-821ADA11E903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65CCB042-B473-4198-AA1E-821ADA11E903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65CCB042-B473-4198-AA1E-821ADA11E903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CB69351-7BB6-43FB-BFD8-8ABC1B41F475}
+	EndGlobalSection
+EndGlobal
