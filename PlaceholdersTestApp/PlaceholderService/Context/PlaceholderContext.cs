@@ -9,7 +9,21 @@ namespace PlaceholderService.Context
 {
     public class PlaceholderContext : IPlaceholderContext
     {
-        public List<User> Users { get; set; }
+        private List<User> _users;
+        public int DbCallsCounter { get; private set; }
+
+        public List<User> Users
+        {
+            get
+            {
+                DbCallsCounter++;
+                return _users;
+            }
+            set
+            {
+                _users = value;
+            }
+        }
         public long UserId { get; set; }
     }
 }

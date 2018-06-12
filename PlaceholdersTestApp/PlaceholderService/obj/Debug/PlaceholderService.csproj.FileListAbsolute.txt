@@ -4,3 +4,9 @@ C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderS
 C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.csproj.CoreCompileInputs.cache
 C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.dll
 C:\Users\josipba\Documents\CTK\PlaceholdersTest\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.pdb
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\Placeholders\PlaceholdersTestApp\PlaceholderService\bin\Debug\PlaceholderService.dll
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\Placeholders\PlaceholdersTestApp\PlaceholderService\bin\Debug\PlaceholderService.pdb
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\Placeholders\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.csprojResolveAssemblyReference.cache
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\Placeholders\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.csproj.CoreCompileInputs.cache
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\Placeholders\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.dll
+C:\Users\josipba\Documents\CTK\PlaceholdersTest\Placeholders\PlaceholdersTestApp\PlaceholderService\obj\Debug\PlaceholderService.pdb

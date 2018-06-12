@@ -50,6 +50,8 @@
     <Compile Include="IPlaceholders\IUserDataPlaceholder.cs" />
     <Compile Include="PlaceholderBuilder\IPlaceholderBuilder.cs" />
     <Compile Include="PlaceholderBuilder\PlaceholderBuilder.cs" />
+    <Compile Include="PlaceholderFactory\IPlaceholderFactory.cs" />
+    <Compile Include="PlaceholderFactory\PlaceholderFactory.cs" />
     <Compile Include="Placeholders\LastNamePlaceholder.cs" />
     <Compile Include="Placeholders\NamePlaceholder.cs" />
     <Compile Include="Placeholders\OIBPlaceholder.cs" />

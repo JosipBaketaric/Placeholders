@@ -10,6 +10,7 @@ namespace PlaceholderService.Context
     public interface IPlaceholderContext
     {
         long UserId { get; set; }
+        int DbCallsCounter { get; }
         List<User> Users { get; set; }
 
     }
