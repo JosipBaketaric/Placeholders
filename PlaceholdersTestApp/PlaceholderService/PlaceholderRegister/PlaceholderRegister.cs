@@ -8,13 +8,13 @@ using PlaceholderService.Context;
 using PlaceholderService.Placeholders;
 using PlaceholderService.PlaceholderFactory;
 
-namespace PlaceholderService.PlaceholderBuilder
+namespace PlaceholderService.PlaceholderRegister
 {
-    public class PlaceholderBuilder : IPlaceholderBuilder
+    public class PlaceholderRegister : IPlaceholderRegister
     {
         private IPlaceholderContext _placeholderContext;
         private IPlaceholderFactory _placeholderFactory;
-        public PlaceholderBuilder(IPlaceholderContext placeholderContext, IPlaceholderFactory placeholderFactory)
+        public PlaceholderRegister(IPlaceholderContext placeholderContext, IPlaceholderFactory placeholderFactory)
         {
             _placeholderContext = placeholderContext;
             _placeholderFactory = placeholderFactory;

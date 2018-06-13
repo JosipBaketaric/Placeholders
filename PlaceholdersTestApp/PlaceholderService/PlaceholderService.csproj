@@ -48,8 +48,8 @@
     <Compile Include="IPlaceholders\IOIBPlaceholder.cs" />
     <Compile Include="IPlaceholders\IPlaceholder.cs" />
     <Compile Include="IPlaceholders\IUserDataPlaceholder.cs" />
-    <Compile Include="PlaceholderBuilder\IPlaceholderBuilder.cs" />
-    <Compile Include="PlaceholderBuilder\PlaceholderBuilder.cs" />
+    <Compile Include="PlaceholderRegister\IPlaceholderRegister.cs" />
+    <Compile Include="PlaceholderRegister\PlaceholderRegister.cs" />
     <Compile Include="PlaceholderFactory\IPlaceholderFactory.cs" />
     <Compile Include="PlaceholderFactory\PlaceholderFactory.cs" />
     <Compile Include="Placeholders\LastNamePlaceholder.cs" />

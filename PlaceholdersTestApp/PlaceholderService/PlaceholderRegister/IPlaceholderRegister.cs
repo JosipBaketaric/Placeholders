@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlaceholderService.PlaceholderBuilder
+namespace PlaceholderService.PlaceholderRegister
 {
-    public interface IPlaceholderBuilder
+    public interface IPlaceholderRegister
     {
         string NamePlaceholder { get; }
         string LastNamePlaceholder { get; }

@@ -1,6 +1,6 @@
 ﻿using PlaceholderService.Context;
 using PlaceholderService.FakeDB;
-using PlaceholderService.PlaceholderBuilder;
+using PlaceholderService.PlaceholderRegister;
 using PlaceholderService.PlaceholderFactory;
 using System;
 using System.Collections.Generic;
@@ -28,12 +28,12 @@ namespace PlaceholdersTestApp
             placeholderContext.Users = fakeDB;
 
             IPlaceholderFactory placeholderFactory = new PlaceholderFactory();
-            IPlaceholderBuilder placeholderBuilder = new PlaceholderBuilder(placeholderContext, placeholderFactory);
-            Console.WriteLine("lastName: " + placeholderBuilder.LastNamePlaceholder);
+            IPlaceholderRegister placeholderRegister = new PlaceholderRegister(placeholderContext, placeholderFactory);
+            Console.WriteLine("lastName: " + placeholderRegister.LastNamePlaceholder);
 
-            Console.WriteLine("UserDataPlaceholder: " + placeholderBuilder.UserDataPlaceholder);
-            Console.WriteLine("Name: " + placeholderBuilder.NamePlaceholder);
-            Console.WriteLine("OIB: " + placeholderBuilder.OIBPlaceholder);
+            Console.WriteLine("UserDataPlaceholder: " + placeholderRegister.UserDataPlaceholder);
+            Console.WriteLine("Name: " + placeholderRegister.NamePlaceholder);
+            Console.WriteLine("OIB: " + placeholderRegister.OIBPlaceholder);
 
             Console.WriteLine("DB CALLS: " + placeholderContext.DbCallsCounter);
 
