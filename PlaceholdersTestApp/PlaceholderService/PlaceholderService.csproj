@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="Context\IPlaceholderContext.cs" />
     <Compile Include="Context\PlaceholderContext.cs" />
+    <Compile Include="FakeDB\Address.cs" />
     <Compile Include="FakeDB\User.cs" />
+    <Compile Include="IPlaceholders\IAdressPlaceholder.cs" />
     <Compile Include="IPlaceholders\ILastNamePlaceholder.cs" />
     <Compile Include="IPlaceholders\INamePlaceholder.cs" />
     <Compile Include="IPlaceholders\IOIBPlaceholder.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="PlaceholderRegister\PlaceholderRegister.cs" />
     <Compile Include="PlaceholderFactory\IPlaceholderFactory.cs" />
     <Compile Include="PlaceholderFactory\PlaceholderFactory.cs" />
+    <Compile Include="Placeholders\AdressPlaceholder.cs" />
     <Compile Include="Placeholders\LastNamePlaceholder.cs" />
     <Compile Include="Placeholders\NamePlaceholder.cs" />
     <Compile Include="Placeholders\OIBPlaceholder.cs" />

@@ -11,7 +11,7 @@ namespace PlaceholderService.Placeholders
     public class UserDataPlaceholder : IUserDataPlaceholder
     {
         private string _value;
-        private long _id;
+        private long _userId;
         private INamePlaceholder _namePlaceholder;
         private ILastNamePlaceholder _lastNamePlaceholder;
         private IOIBPlaceholder _OIBPlaceholder;
@@ -21,14 +21,14 @@ namespace PlaceholderService.Placeholders
             _lastNamePlaceholder = lastNamePlaceholder;
             _OIBPlaceholder = OIBPlaceholder;
         }
-        public string GetValue(IPlaceholderContext placeholderContext)
+        public string GetValue(IPlaceholderContext placeholderContext, long userId)
         {
-            if (!string.IsNullOrEmpty(this._value) && _id == placeholderContext.UserId)
+            if (!string.IsNullOrEmpty(this._value) && _userId == userId)
                 return _value;
 
 
-            _id = placeholderContext.UserId;
-            _value = "Name: " + _namePlaceholder.GetValue(placeholderContext) + "  Last name: " + _lastNamePlaceholder.GetValue(placeholderContext) + "   OIB: " + _OIBPlaceholder.GetValue(placeholderContext);
+            _userId = userId;
+            _value = "Name: " + _namePlaceholder.GetValue(placeholderContext, userId) + "  Last name: " + _lastNamePlaceholder.GetValue(placeholderContext, userId) + "   OIB: " + _OIBPlaceholder.GetValue(placeholderContext, userId);
             return _value;
         }
     }

@@ -9,6 +9,5 @@ namespace PlaceholderService.IPlaceholders
 {
     public interface IPlaceholder
     {
-        string GetValue(IPlaceholderContext placeholderContext);
     }
 }

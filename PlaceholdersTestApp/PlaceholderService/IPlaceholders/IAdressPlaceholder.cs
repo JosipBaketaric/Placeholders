@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PlaceholderService.IPlaceholders
 {
-    public interface ILastNamePlaceholder : IPlaceholder
+    public interface IAdressPlaceholder : IPlaceholder
     {
         string GetValue(IPlaceholderContext placeholderContext, long userId);
 

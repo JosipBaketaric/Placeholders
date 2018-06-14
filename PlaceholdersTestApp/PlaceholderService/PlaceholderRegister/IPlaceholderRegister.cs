@@ -9,9 +9,15 @@ namespace PlaceholderService.PlaceholderRegister
 {
     public interface IPlaceholderRegister
     {
-        string NamePlaceholder { get; }
-        string LastNamePlaceholder { get; }
-        string OIBPlaceholder { get; }
-        string UserDataPlaceholder { get; }
+        string GetNamePlaceholder(long userId);
+
+        string GetLastNamePlaceholder(long userId);
+
+        string GetOIBPlaceholder(long userId);
+
+        string GetUserDataPlaceholder(long userId);
+
+        string GetAdressPlaceholder(long userId);
+
     }
 }

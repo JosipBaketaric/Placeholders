@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlaceholderService.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace PlaceholderService.IPlaceholders
 {
     public interface IUserDataPlaceholder : IPlaceholder
     {
+        string GetValue(IPlaceholderContext placeholderContext, long userId);
+
     }
 }

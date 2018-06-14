@@ -46,6 +46,14 @@ namespace PlaceholderService.PlaceholderFactory
                 }
 
             }
+            else if (type == typeof(IAdressPlaceholder))
+            {
+                if (!placeholders.TryGetValue(type, out placeholder))
+                {
+                    placeholder = new AdressPlaceholder();
+                }
+
+            }
             else if(type == typeof(IUserDataPlaceholder))
             {
                 if (!placeholders.TryGetValue(type, out placeholder))

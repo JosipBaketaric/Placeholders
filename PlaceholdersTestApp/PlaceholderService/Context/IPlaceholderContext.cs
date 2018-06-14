@@ -12,6 +12,8 @@ namespace PlaceholderService.Context
         long UserId { get; set; }
         int DbCallsCounter { get; }
         List<User> Users { get; set; }
+        List<Address> Addresses { get; set; }
+
 
     }
 }

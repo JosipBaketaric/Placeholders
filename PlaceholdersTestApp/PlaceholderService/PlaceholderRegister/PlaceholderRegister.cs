@@ -22,34 +22,29 @@ namespace PlaceholderService.PlaceholderRegister
 
 
         #region Placeholder getters
-        public string NamePlaceholder
+        public string GetNamePlaceholder(long userId)
         {
-            get
-            {
-                return _placeholderFactory.GetOrCreatePlaceholder<INamePlaceholder>().GetValue(_placeholderContext);
-            }
+            return (_placeholderFactory.GetOrCreatePlaceholder<INamePlaceholder>() as INamePlaceholder).GetValue(_placeholderContext, userId);
         }
-        public string LastNamePlaceholder
+        public string GetLastNamePlaceholder(long userId)
         {
-            get
-            {
-                return _placeholderFactory.GetOrCreatePlaceholder<ILastNamePlaceholder>().GetValue(_placeholderContext);
-            }
+            return (_placeholderFactory.GetOrCreatePlaceholder<ILastNamePlaceholder>() as ILastNamePlaceholder).GetValue(_placeholderContext, userId);
         }
-        public string OIBPlaceholder
+        public string GetOIBPlaceholder(long userId)
         {
-            get
-            {
-                return _placeholderFactory.GetOrCreatePlaceholder<IOIBPlaceholder>().GetValue(_placeholderContext);
-            }
+            return (_placeholderFactory.GetOrCreatePlaceholder<IOIBPlaceholder>() as IOIBPlaceholder).GetValue(_placeholderContext, userId);
+
         }
-        public string UserDataPlaceholder
+        public string GetUserDataPlaceholder(long userId)
         {
-            get
-            {
-                return _placeholderFactory.GetOrCreatePlaceholder<IUserDataPlaceholder>().GetValue(_placeholderContext);
-            }
+            return (_placeholderFactory.GetOrCreatePlaceholder<IUserDataPlaceholder>() as IUserDataPlaceholder).GetValue(_placeholderContext, userId);
         }
+        public string GetAdressPlaceholder(long userId)
+        {
+            return (_placeholderFactory.GetOrCreatePlaceholder<IAdressPlaceholder>() as IAdressPlaceholder).GetValue(_placeholderContext, userId);
+        }
+
+
         #endregion
     }
 }

@@ -8,7 +8,7 @@ using PlaceholderService.Context;
 
 namespace PlaceholderService.Placeholders
 {
-    public class LastNamePlaceholder : ILastNamePlaceholder
+    public class AdressPlaceholder : IAdressPlaceholder
     {
         private string _value;
         private long _userId;
@@ -18,7 +18,13 @@ namespace PlaceholderService.Placeholders
                 return _value;
 
             _userId = userId;
-            _value = placeholderContext.Users.Where(x => x.ID == userId).Select(x => x.LastName).FirstOrDefault();
+            var tempResult = placeholderContext.Addresses.Where(x => x.userId == userId).Select(x => x.AddressName).ToList();
+
+            for(int i = 0; i < tempResult.Count; i++)
+            {
+                _value += "Adress " + (i + 1) + ": " + tempResult.ElementAt(i) + ",\n";
+            }
+
             return _value;
         }
     }

@@ -11,15 +11,16 @@ namespace PlaceholderService.Placeholders
     public class NamePlaceholder : INamePlaceholder
     {
         private string _value;
-        private long _id;
-        public string GetValue(IPlaceholderContext placeholderContext)
+        private long _userId;
+        public string GetValue(IPlaceholderContext placeholderContext, long userId)
         {
-            if (!string.IsNullOrEmpty(this._value) && _id == placeholderContext.UserId)
+            if (!string.IsNullOrEmpty(this._value) && _userId == userId)
                 return _value;
 
-            _id = placeholderContext.UserId;
-            _value = placeholderContext.Users.Where(x => x.ID == placeholderContext.UserId).Select(x => x.Name).FirstOrDefault();
+            _userId = userId;
+            _value = placeholderContext.Users.Where(x => x.ID == userId).Select(x => x.Name).FirstOrDefault();
             return _value;
         }
+
     }
 }

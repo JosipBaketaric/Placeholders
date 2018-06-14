@@ -10,7 +10,9 @@ namespace PlaceholderService.Context
     public class PlaceholderContext : IPlaceholderContext
     {
         private List<User> _users;
+        private List<Address> _adresses;
         public int DbCallsCounter { get; private set; }
+        public long UserId { get; set; }
 
         public List<User> Users
         {
@@ -24,6 +26,18 @@ namespace PlaceholderService.Context
                 _users = value;
             }
         }
-        public long UserId { get; set; }
+        public List<Address> Addresses
+        {
+            get
+            {
+                DbCallsCounter++;
+                return _adresses;
+            }
+            set
+            {
+                _adresses = value;
+            }
+        }
+
     }
 }
