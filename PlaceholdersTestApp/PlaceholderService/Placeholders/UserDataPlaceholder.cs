@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PlaceholderService.Context;
+using System.ComponentModel;
 
 namespace PlaceholderService.Placeholders
 {
+    [Description("[[user_data_placeholder]]")]
     public class UserDataPlaceholder : IUserDataPlaceholder
     {
         private string _value;
@@ -15,6 +17,8 @@ namespace PlaceholderService.Placeholders
         private INamePlaceholder _namePlaceholder;
         private ILastNamePlaceholder _lastNamePlaceholder;
         private IOIBPlaceholder _OIBPlaceholder;
+
+
         public UserDataPlaceholder(INamePlaceholder namePlaceholder, ILastNamePlaceholder lastNamePlaceholder, IOIBPlaceholder OIBPlaceholder)
         {
             _namePlaceholder = namePlaceholder;

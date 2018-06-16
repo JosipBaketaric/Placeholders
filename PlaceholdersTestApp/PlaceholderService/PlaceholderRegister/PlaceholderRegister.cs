@@ -7,6 +7,7 @@ using PlaceholderService.IPlaceholders;
 using PlaceholderService.Context;
 using PlaceholderService.Placeholders;
 using PlaceholderService.PlaceholderFactory;
+using System.ComponentModel;
 
 namespace PlaceholderService.PlaceholderRegister
 {
@@ -14,6 +15,9 @@ namespace PlaceholderService.PlaceholderRegister
     {
         private IPlaceholderContext _placeholderContext;
         private IPlaceholderFactory _placeholderFactory;
+    
+
+
         public PlaceholderRegister(IPlaceholderContext placeholderContext, IPlaceholderFactory placeholderFactory)
         {
             _placeholderContext = placeholderContext;

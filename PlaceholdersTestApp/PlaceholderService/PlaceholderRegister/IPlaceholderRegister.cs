@@ -9,6 +9,7 @@ namespace PlaceholderService.PlaceholderRegister
 {
     public interface IPlaceholderRegister
     {
+
         string GetNamePlaceholder(long userId);
 
         string GetLastNamePlaceholder(long userId);
